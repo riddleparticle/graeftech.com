@@ -435,8 +435,13 @@
 
         // Form submission handling
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            // Netlify will handle the form submission automatically
-            // This event listener can be used for additional client-side validation if needed
+            // Store form reference
+            const form = this;
+            
+            // Clear form after a short delay to allow Formspree to process
+            setTimeout(function() {
+                form.reset();
+            }, 1000);
         });
     </script>
 </body>

@@ -437,7 +437,12 @@
         
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             
+            const form = this;
             
+            
+            setTimeout(function() {
+                form.reset();
+            }, 1000);
         });
     </script>
 </body>
