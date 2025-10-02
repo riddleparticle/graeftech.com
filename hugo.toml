@@ -1,7 +1,7 @@
 baseURL = "https://www.graeftech.com/"
 languageCode = "en-us"
 title = "Graef Technical Solutions"
-theme = ""
+# theme = ""
 
 # Enable emoji support
 enableEmoji = true
