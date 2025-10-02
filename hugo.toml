@@ -1,3 +1,48 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://www.graeftech.com/"
+languageCode = "en-us"
+title = "Graef Technical Solutions"
+theme = ""
+
+# Enable emoji support
+enableEmoji = true
+
+# Disable taxonomies (tags, categories) for single page site
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Expert computer consulting solutions - IT consulting, system support, cybersecurity, and cloud solutions"
+  author = "Graef Technical Solutions"
+  
+  # Contact information
+  email = "bill@graeftech.com"
+  phone = "+1 407.493.9556"
+  
+  # Social media
+  facebook = "https://facebook.com/graeftech"
+  linkedin = "https://linkedin.com/in/williamgraef"
+  github = "https://github.com/riddleparticle"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# GitHub Pages specific settings
+[outputs]
+  home = ["HTML"]
+
+# Disable RSS, sitemap, and 404 page generation if not needed
+disableRSS = false
+disableSitemap = false
+
+# Build settings for GitHub Pages
+publishDir = "public"
+
+# Permalinks
+[permalinks]
+
+# Menu (if you expand to multiple pages later)
+# [[menu.main]]
+#   name = "Home"
+#   url = "/"
+#   weight = 1
