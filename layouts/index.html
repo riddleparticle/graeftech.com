@@ -275,12 +275,6 @@
             background: #6ab038;
         }
 
-        .contact-form div[data-netlify-recaptcha] {
-            margin: 1rem 0;
-            display: flex;
-            justify-content: center;
-        }
-
         .contact-info {
             text-align: center;
             margin-top: 2rem;
@@ -406,16 +400,13 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-content">
-                <form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
-                    <input type="hidden" name="form-name" value="contact">
-                    <p style="display: none;">
-                        <label>Don't fill this out if you're human: <input name="bot-field"></label>
-                    </p>
+                <form class="contact-form" action="https://formspree.io/f/myznjjad" method="POST" data-formspree-recaptcha="true">
                     <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="_replyto" placeholder="Your Email" required>
                     <input type="tel" name="phone" placeholder="Phone Number">
                     <textarea name="message" placeholder="How can we help you?" required></textarea>
-                    <div data-netlify-recaptcha="true"></div>
+                    <input type="hidden" name="_subject" value="New contact from Graef Technical Solutions website">
+                    <input type="text" name="_gotcha" style="display:none">
                     <button type="submit">Send Message</button>
                 </form>
                 <div class="contact-info">
