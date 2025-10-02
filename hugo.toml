@@ -32,11 +32,11 @@ disableKinds = ["taxonomy", "term"]
   home = ["HTML"]
 
 # Disable RSS, sitemap, and 404 page generation if not needed
-disableRSS = false
-disableSitemap = false
+# disableRSS = false
+# disableSitemap = false
 
 # Build settings for GitHub Pages
-publishDir = "public"
+# publishDir = "public"
 
 # Permalinks
 [permalinks]
